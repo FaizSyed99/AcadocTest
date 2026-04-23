@@ -11,3 +11,5 @@ python-multipart
 streamlit
 requests
 rank_bm25
+langchain-openai
+python-dotenv

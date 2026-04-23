@@ -17,7 +17,8 @@ start "AcaDoc-API" cmd /k "set PYTHONPATH=%CD% && python -m api.index"
 
 :: 4. Start Frontend
 echo 🎨 Starting Frontend UI...
-ping -n 5 127.0.0.1 >nul
-python -m streamlit run src/app.py
+:: Use python for delay if ping is missing
+python -c "import time; time.sleep(5)"
+python -m streamlit run src/app.py --browser.gatherUsageStats false
 
 echo ✅ System is running!
