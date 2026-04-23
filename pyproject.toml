@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "acadoc-ai"
+version = "1.0.0"
+description = "Textbook-grounded, curriculum-aligned medical AI for Indian MBBS/PG students."
+authors = ["AcaDoc AI Team <interns@acadoc.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.0"
+pypdf = "^4.0.0"
+langchain = "^0.1.0"
+langchain-community = "^0.0.10"
+chromadb = "^0.4.22"
+sentence-transformers = "^2.3.1"
+ollama = "^0.1.6"
+pydantic = "^2.6.1"
+python-multipart = "^0.0.9"
+llama-index-llms-llama-cpp = {version = "*", optional = true}
+llama-index-llms-openai = {version ="*", optional = true}
+llama-index-llms-openai-like = {version ="*", optional = true}
+llama-index-llms-ollama = {version ="*", optional = true}
+llama-index-llms-azure-openai = {version ="*", optional = true}
+llama-index-llms-gemini = {version ="*", optional = true}
+llama-index-embeddings-ollama = {version ="*", optional = true}
+llama-index-embeddings-huggingface = {version ="*", optional = true}
+llama-index-embeddings-openai = {version ="*", optional = true}
+llama-index-embeddings-azure-openai = {version ="*", optional = true}
+llama-index-embeddings-gemini = {version ="*", optional = true}
+llama-index-embeddings-mistralai = {version ="*", optional = true}
+llama-index-vector-stores-qdrant = {version ="*", optional = true}
+llama-index-vector-stores-milvus = {version ="*", optional = true}
+llama-index-vector-stores-chroma = {version ="*", optional = true}
+llama-index-vector-stores-postgres = {version ="*", optional = true}
+llama-index-vector-stores-clickhouse = {version ="*", optional = true}
+llama-index-storage-docstore-postgres = {version ="*", optional = true}
+llama-index-storage-index-store-postgres = {version ="*", optional = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
